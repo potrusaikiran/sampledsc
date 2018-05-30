@@ -1,6 +1,6 @@
-configuration Wireless-Networking{
+configuration WirelessNetworking{
 Node 'localhost'{
-    WindowsFeature WirelessNetworking{
+    WindowsFeature WirelessNetwork{
                 Name = 'Wireless-Networking'
                 Ensure = 'absent'
                 }
