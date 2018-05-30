@@ -1,4 +1,4 @@
-configuration WirelessNetworking{
+configuration WirelessNetwork{
 Node 'localhost'{
     WindowsFeature WirelessNetwork{
                 Name = 'Wireless-Networking'
