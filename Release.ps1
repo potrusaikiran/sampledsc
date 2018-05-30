@@ -8,5 +8,5 @@ $AutomationAccount|Start-AzureRmAutomationDscCompilationJob -ConfigurationName W
 
 $AutomationAccount=Get-AzureRmAutomationAccount -ResourceGroupName skplte-RG
 $AutomationAccount|Import-AzureRmAutomationDscConfiguration -SourcePath "$env:System_artifactsdirectory\ES-DevOps-CI-CD-failure\DSC\service.ps1" -Published -Force
-$AutomationAccount|Start-AzureRmAutomationDscCompilationJob -ConfigurationName service.ps1
+$AutomationAccount|Start-AzureRmAutomationDscCompilationJob -ConfigurationName service
 #edited for continuous build check
