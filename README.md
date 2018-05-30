@@ -1,1 +1,1 @@
-# sampledsc
+# sampledsc to publish and test configuration and configuration node created at azure 
