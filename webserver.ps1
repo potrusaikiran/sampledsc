@@ -1,6 +1,14 @@
 
- Node localhost {
-        WindowsFeature InstallIIS {
-            Name = "Web-Server"
-            Ensure = "Present"
-        }
+configuration InstallIIS
+{
+    Node localhost
+    {
+         Import-Module -Name 'PSDesiredStateConfiguration'
+        WindowsFeature WebServer
+      {
+        Name = "Web-Server"
+        Ensure    = "present"       
+      }
+
+   }
+}
