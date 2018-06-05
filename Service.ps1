@@ -3,10 +3,10 @@
     Node localhost
     {
          Import-Module -Name 'PSDesiredStateConfiguration'
-        WindowsFeature WebServer
+        WindowsFeature ftpserver
       {
+		Name      = "Web-Ftp-Service"
         Ensure    = "present"
-        Name      = "Web-Ftp-Service"
       }
 
    }
