@@ -1,5 +1,5 @@
 $AutomationAccount=Get-AzureRmAutomationAccount -ResourceGroupName saikiranpotru
-$AutomationAccount|Import-AzureRmAutomationDscConfiguration -SourcePath "$env:System_artifactsdirectory\vmautomationbuild\DSC\Backup.ps1" -Published -Force
+$AutomationAccount|Import-AzureRmAutomationDscConfiguration -SourcePath "$env:System_artifactsdirectory\vmautomationbuild\DSC\webserver.ps1" -Published -Force
 $AutomationAccount|Start-AzureRmAutomationDscCompilationJob -ConfigurationName webserver
 
 $AutomationAccount=Get-AzureRmAutomationAccount -ResourceGroupName saikiranpotru
