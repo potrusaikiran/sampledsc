@@ -1,5 +1,5 @@
 
-configuration InstallIIS
+configuration webserver
 {
     Node localhost
     {
