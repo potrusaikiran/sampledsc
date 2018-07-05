@@ -21,4 +21,5 @@ sudo dpkg -i ./dsc-1.1.1-294.ssl_100.x64.deb
 #Restart OMI
 sudo /opt/omi/bin/service_control restart
 #configuration modules
+Install-Module PSDesiredStateConfiguration
 Install-Module nx
