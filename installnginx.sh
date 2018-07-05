@@ -11,7 +11,8 @@
      #cd psdc
 wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-beta.8/powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
 sudo dpkg -i ./powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
-sudo apt-get install -f
+#sudo apt-get install -f
+apt-get -f install
 # Download and install the OMI
 wget https://github.com/Microsoft/omi/releases/download/v1.1.0-0/omi-1.1.0.ssl_100.x64.deb
 sudo dpkg -i ./omi-1.1.0.ssl_100.x64.deb
@@ -23,4 +24,4 @@ sudo /opt/omi/bin/service_control restart
 #configuration modules
 sudo powershell
 #Install-Module PSDesiredStateConfiguration
-#Install-Module nx
+Install-Module nx -f
