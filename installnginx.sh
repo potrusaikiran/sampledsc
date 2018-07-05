@@ -22,5 +22,5 @@ sudo dpkg -i ./dsc-1.1.1-294.ssl_100.x64.deb
 sudo /opt/omi/bin/service_control restart
 #configuration modules
 sudo powershell
-Install-Module PSDesiredStateConfiguration
-Install-Module nx
+#Install-Module PSDesiredStateConfiguration
+#Install-Module nx
