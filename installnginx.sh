@@ -6,6 +6,7 @@ apt-get install unzip && unzip index.zip
 #Powershell configuration
 cd
 mkdir psdc
+cd psdc
 wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-beta.8/powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
 sudo dpkg -i ./powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
 sudo apt-get install -f
@@ -17,3 +18,5 @@ wget https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/download/v1.
 sudo dpkg -i ./dsc-1.1.1-294.ssl_100.x64.deb
 #Restart OMI
 sudo /opt/omi/bin/service_control restart
+#configuration modules
+Install-Module nx
