@@ -1,0 +1,60 @@
+
+
+
+Configuration xScript_WatchFileContentConfig {
+    [CmdletBinding()]
+    param
+    (
+        [Parameter(Mandatory = $true, HelpMessage='The path at which to create the file.')]
+        [ValidateNotNullOrEmpty()]
+        [String]
+        $FilePath="sample.txt",
+
+        [Parameter(Mandatory = $true, HelpMessage='The content to set in the file.')]
+        [ValidateNotNullOrEmpty()]
+        [String]
+        $FileContent="Hello World!!!"
+    )
+
+    Import-DscResource -ModuleName xPSDesiredStateConfiguration
+
+    Node localhost
+    {
+        xScript ScriptExample
+        {
+            SetScript  = {
+                $streamWriter = New-Object -TypeName 'System.IO.StreamWriter' -ArgumentList @( $using:FilePath )
+                $streamWriter.WriteLine($using:FileContent)
+                $streamWriter.Close()
+            }
+
+            TestScript = {
+                if (Test-Path -Path $using:FilePath)
+                {
+                    $fileContent = Get-Content -Path $using:filePath -Raw
+                    return $fileContent -eq $using:FileContent
+                }
+                else
+                {
+                    return $false
+                }
+            }
+
+            GetScript  = {
+                $fileContent = $null
+
+                if (Test-Path -Path $using:FilePath)
+                {
+                    $fileContent = Get-Content -Path $using:filePath -Raw
+                }
+
+                return @{
+                    Result = $fileContent
+                }
+            }
+        }
+    }
+}
+
+xPSDesiredStateConfiguration
+
