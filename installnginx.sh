@@ -25,4 +25,4 @@ sudo /opt/omi/bin/service_control restart
 #configuration modules
 sudo powershell
 #Install-Module PSDesiredStateConfiguration
-Install-Module nx -f
+#Install-Module nx -f
