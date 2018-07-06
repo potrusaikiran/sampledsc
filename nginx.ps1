@@ -5,6 +5,6 @@
       apt-get install unzip 
      unzip index.zip
      #sudo apt-get remove nginx nginx-common
-     Install-Module PSDesiredStateConfiguration -Force
-     Install-Module nx -Force
-     Install-Module xPSDesiredStateConfiguration -Force
+     #Install-Module PSDesiredStateConfiguration -Force
+     #Install-Module nx -Force
+     #Install-Module xPSDesiredStateConfiguration -Force
