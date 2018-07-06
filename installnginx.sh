@@ -27,5 +27,5 @@ sudo /opt/omi/bin/service_control restart
 sudo powershell
 #Install-Module PSDesiredStateConfiguration
 #Install-Module nx -f
-wget https://raw.githubusercontent.com/potrusaikiran/sampledsc/master/nginx.ps1
-./nginx.ps1
+#wget https://raw.githubusercontent.com/potrusaikiran/sampledsc/master/nginx.ps1
+#./nginx.ps1
