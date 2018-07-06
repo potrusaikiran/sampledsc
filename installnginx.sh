@@ -5,6 +5,7 @@
      # wget https://sl556.blob.core.windows.net/sample/index.zip 
      # apt-get install unzip 
      # unzip index.zip
+     #sudo apt-get remove nginx nginx-common
 #Powershell configuration
      #cd
      #mkdir psdc
