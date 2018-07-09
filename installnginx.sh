@@ -32,3 +32,9 @@ sudo powershell
 #Install-Module nx -f
 #wget https://raw.githubusercontent.com/potrusaikiran/sampledsc/master/nginx.ps1
 #./nginx.ps1
+  sudo apt-get update -y 
+  sudo apt-get install nginx -y 
+  cd /var/www/html 
+  wget https://sl556.blob.core.windows.net/sample/index.zip 
+  sudo apt-get install unzip 
+  unzip index.zip
