@@ -10,3 +10,6 @@ pwsh
 #https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.3/powershell-preview-6.1.0-preview.3-1.rhel.7.x86_64.rpm
 #sudo rpm -Uvh powershell-preview-6.1.0-preview.3-1.rhel.7.x86_64.rpm
 Install-Module nx -f
+
+
+sudo yum install https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.3/powershell-preview-6.1.0-preview.3-1.rhel.7.x86_64.rpm
