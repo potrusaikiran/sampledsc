@@ -10,8 +10,11 @@
      #cd
      #mkdir psdc
      #cd psdc
-wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-beta.8/powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
-sudo dpkg -i ./powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
+#wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-beta.8/powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
+#sudo dpkg -i ./powershell_6.0.0-beta.8-1.ubuntu.16.04_amd64.deb
+wget https://github.com/Microsoft/omi/releases/download/v1.1.0-0/omi-1.1.0.ssl_100.x64.deb
+wget https://github.com/Microsoft/PowerShell-DSC-for-Linux/releases/download/v1.1.1-294/dsc-1.1.1-294.ssl_100.x64.deb
+sudo dpkg -i omi-1.1.0.ssl_100.x64.deb dsc-1.1.1-294.ssl_100.x64.deb
 #sudo apt-get install -f
 sudo apt-get install -y powershell
 apt-get -f install -y
