@@ -12,6 +12,6 @@ sudo firewall-cmd --permanent --zone=public --add-service=http
 #sudo firewall-cmd --permanent --zone=public --add-service=https
 sudo firewall-cmd --reload
 
-sudo ss -tulpn
+#sudo ss -tulpn
 
 
