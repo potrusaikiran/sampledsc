@@ -6,7 +6,7 @@ yum install nginx -y
 systemctl enable nginx 
 systemctl start nginx
 systemctl status nginx
-sudo firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --permanent --zone=public --add-service=http
 #sudo firewall-cmd --permanent --zone=public --add-service=https
-sudo firewall-cmd --reload
+firewall-cmd --reload
 
