@@ -14,3 +14,4 @@ cd  /usr/share/nginx/html
 yum install unzip -y
 wget https://sl556.blob.core.windows.net/sample/index.zip 
 unzip index.zip
+rm -f index.html
