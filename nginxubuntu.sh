@@ -1,15 +1,17 @@
-sudo apt-get update -y 
-sudo apt-get install nginx -y 
+apt-get update -y 
+apt-get install nginx -y 
 
-sudo systemctl enable nginx
-sudo systemctl start nginx
-sudo systemctl status nginx
+systemctl enable nginx
+systemctl start nginx
+systemctl status nginx
 
-sudo firewall-cmd --permanent --zone=public --add-service=http
-sudo firewall-cmd --permanent --zone=public --add-service=https
-sudo firewall-cmd --reload
+firewall-cmd --permanent --zone=public --add-service=http
+#firewall-cmd --permanent --zone=public --add-service=https
+firewall-cmd --reload
 
 cd /var/www/html 
-wget https://sl556.blob.core.windows.net/sample/index.zip 
-sudo apt-get install unzip 
+#wget https://sl556.blob.core.windows.net/sample/index.zip 
+mv /var/lib/waagent/custom-script/download/0/index.zip /var/www/html
+#rm -f index.html
+apt-get install unzip 
 unzip index.zip
